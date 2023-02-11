@@ -1,0 +1,22 @@
+{
+  "name": "immersion",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=14.0.0 < 18.0.0"
+  },
+  "description": "Immersion package",
+  "main": "index.js",
+  "dependencies": {
+    "mongoose": "^6.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "Immersion"
+  ],
+  "author": "David Valor",
+  "license": "ISC",
+  "type": "module"
+}
