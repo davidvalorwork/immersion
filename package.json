@@ -2,16 +2,26 @@
   "name": "immersion",
   "version": "1.0.0",
   "engines": {
-    "node": ">=14.0.0 < 18.0.0"
+    "node": "18.0.0 > 18.15"
   },
   "description": "Immersion package",
   "main": "index.js",
   "dependencies": {
+    "apollo-server": "^3.12.0",
+    "axios": "^1.3.4",
+    "graphql": "^16.6.0",
+    "graphql-compose-mongoose": "^9.8.0",
+    "graphql-tools": "^8.3.19",
     "mongoose": "^6.9.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
   "scripts": {
-    "test": "npm test"
+    "test": "jest",
+    "node": "nvm use 18.15.0",
+    "start": "nodemon index.js",
+    "mongo": "mongod --dbpath D://data-mongo"
   },
   "keywords": [
     "Immersion"

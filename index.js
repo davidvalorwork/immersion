@@ -1,12 +1,17 @@
 import MongoDB from "./models/mongodb.js";
 
-// Initializing mongodb singleton
+function initDB() {
+  // Initializing mongodb singleton
+  console.log("\uf12a Initializing MongoDB singleton...");
+  const db = new MongoDB();
+  Object.freeze(db);
 
-console.log("\uf12a Initializing MongoDB singleton...");
-const db = new MongoDB();
-Object.freeze(db);
+  // Initializing mongo connection
+  db.init();
+  db.createModels();
+  return db
+}
 
-// Initializing mongo connection
-db.init();
-db.createModels();
-db.createExampleModel();
+const db = initDB();
+import startServer from "./utils/graphql.js";
+startServer(db);
