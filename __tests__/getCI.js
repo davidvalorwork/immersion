@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const query = `
   query {
-    transaction(IDENTIFICACION_DEL_CLIENTE1641: '75249518') {
+    transAT37(IDENTIFICACION_DEL_CLIENTE1641: '75249518') {
       TIPO_DE_CLIENTE_TRANSFEREN1640,
       NOMBRE_DEL_CLIENTE_TRANSFE1642,
       CODIGO_CUENTA_CLIENTE_AT37,
